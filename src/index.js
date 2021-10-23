@@ -1,7 +1,7 @@
-import { BrowserRouter as Router } from 'react-router-dom';
 import ReactDOM from 'react-dom';
-import App from './App';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { StateContextProvider } from './contexts/StateContextProvider';
+import App from './App';
 import './global.css';
 
 ReactDOM.render(

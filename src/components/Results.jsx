@@ -29,7 +29,7 @@ export const Results = () => {
                         <div key={index} className="w-full md:w-2/5">
                             <a href={link} target="_blank" rel="noreferrer">
                                 <p className="text-sm">{link.length > 30 ? link.substring(0, 30) : link}</p>
-                                <p className="text-lg text-blue-700 hover:underline dark:text-blue-300 ">{title}</p>
+                                <p className="text-lg text-blue-700 hover:underline dark:text-blue-300">{title}</p>
                             </a>
                         </div>
                     ))}
@@ -51,7 +51,7 @@ export const Results = () => {
                 <div className="flex flex-wrap items-center justify-between space-y-6 sm:px-56">
                     {results?.entries?.map(({ id, links, source, title }) => (
                         <div key={id} className="w-full md:w-2/5 ">
-                            <a href={links?.[0].href} target="_blank" rel="noreferrer " className="hover:underline ">
+                            <a href={links?.[0].href} target="_blank" rel="noreferrer " className="hover:underline">
                                 <p className="text-lg text-blue-700 dark:text-blue-300">{title}</p>
                             </a>
                             <div className="flex gap-4">
@@ -63,7 +63,7 @@ export const Results = () => {
             );
         case '/videos':
             return (
-                <div className="flex flex-wrap ">
+                <div className="flex flex-wrap">
                     {results?.results?.map((video, index) => (
                         <div key={index} className="p-2">
                             <ReactPlayer url={video.additional_links?.[0].href} controls width="355px" height="200px" />
